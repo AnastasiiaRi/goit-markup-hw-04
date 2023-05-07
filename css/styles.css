@@ -245,7 +245,8 @@ section {
 .social-icon {
   fill: var(--brand-color-1);
 }
-.social-icon:hover {
+.social-icon:hover,
+.social-icon:focus {
   fill: var(--brand-color-4);
 }
 
@@ -320,7 +321,8 @@ section {
 .media-icon {
   fill: var(--brand-color-1);
 }
-.media-icon:hover {
+.media-icon:hover,
+.media-icon:focus {
   fill:#31D0AA;
 }
 /* portfolio styles */
