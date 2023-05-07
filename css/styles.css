@@ -232,7 +232,11 @@ section {
   width: calc((100% - 72px) / 4);
 }
 .team-item {
-  padding: 32px 16px;
+  padding: 32px 0px;
+}
+.team-item .list {
+  justify-content: center;
+  gap: 24px;
 }
 .name {
   font-size: 20px;
@@ -253,19 +257,32 @@ section {
   margin-bottom: 8px;
   text-align: center;
 }
-.social-icon {
-  fill: var(--brand-color-1);
+.circle {
+  height: 100%;
+  width: 100%;
+  background-color: var(--brand-color-1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.social-icon:hover,
-.social-icon:focus {
-  fill: var(--brand-color-4);
+.circle:hover,
+.circle:focus {
+  background-color: var(--brand-color-4);
+}
+.social-icon {
+  fill: var(--brand-color-5);
+}
+.social-icons {
+  width: 40px;
+  height: 40px;
 }
 
 /* section-5 styles */
 
 .our-customers {
   font-size: 36px;
-  line-height: 1.11;
+  line-height: 1.1;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
@@ -278,19 +295,30 @@ section {
 }
 .client {
   width: calc((100% - 120px) / 6);
-  padding: 16px 32px;
-  border: 1px solid #8E8F99;
-  border-radius: 4px;
-  fill: #8E8F99;
+  height: 88px;
 }
-.client:hover {
-  fill: var(--brand-color-4);
-  border: 1px solid var(--brand-color-4);
+.company {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8e8f99;
+}
+.company:hover {
+  color: var(--brand-color-4);
+  border-color: var(--brand-color-4);
+}
+.client-icon {
+  fill: currentColor;
 }
 /* footer stylees */
 
 .footer {
   display: flex;
+  align-items: baseline;
 }
 .footer-wrapper {
   background-color: var(--brand-color-3);
@@ -317,6 +345,7 @@ section {
   margin-left: 0px;
   margin-bottom: 0;
   margin-right: 0px;
+  color: var(--brand-color-2);
 }
 .social-media-wrapper .list {
   gap: 16px;
@@ -328,13 +357,24 @@ section {
   font-weight: 500;
   margin-top: 0px;
   margin-bottom: 16px;
+  color: var(--brand-color-2);
 }
-.media-icon {
-  fill: var(--brand-color-1);
+.media-icons {
+  width: 40px;
+  height: 40px;
 }
-.media-icon:hover,
-.media-icon:focus {
-  fill:#31D0AA;
+.media {
+  background-color: var(--brand-color-1);
+  width: 100%;
+  height: 100%;
+  border-radius:50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.media:hover,
+.media:focus {
+  background-color:#31D0AA;
 }
 /* portfolio styles */
 
@@ -371,7 +411,7 @@ section {
   background-color: var(--brand-color-4);
   color: var(--brand-color-2);
   border: 1px solid transparent;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);;
 }
 .portfolio {
   flex-wrap: wrap;
