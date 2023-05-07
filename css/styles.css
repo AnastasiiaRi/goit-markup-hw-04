@@ -318,7 +318,7 @@ section {
   margin-bottom: 16px;
 }
 .media-icon {
-  fill:#4D5AE5;
+  fill: var(--brand-color-1);
 }
 .media-icon:hover {
   fill:#31D0AA;
