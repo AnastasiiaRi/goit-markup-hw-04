@@ -27,7 +27,8 @@ body {
   display: flex;
 }
 img,
-a {
+a,
+svg {
   display: block;
 }
 section {
@@ -169,7 +170,7 @@ section {
   line-height: 1.2;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
-  margin-top: 0;
+  margin-top: 8px;
 }
 
 /* section-3 styles */
@@ -265,14 +266,20 @@ section {
 }
 .client {
   width: calc((100% - 120px) / 6);
+  padding: 16px 32px;
+  border: 1px solid #8E8F99;
+  border-radius: 4px;
+  fill: #8E8F99;
 }
-client-icon {
-  ill: "#8E8F99";
-  troke: "#8E8F99";
+.client:hover {
+  fill: var(--brand-color-4);
+  border: 1px solid var(--brand-color-4);
 }
-
 /* footer stylees */
 
+.footer {
+  display: flex;
+}
 .footer-wrapper {
   background-color: var(--brand-color-3);
   color: var(--brand-color-5);
@@ -287,13 +294,35 @@ client-icon {
 .logo-col-w {
   color: var(--brand-color-5);
 }
+.logo-wrapper {
+  margin-right: 120px;
+}
 .text-footer {
   line-height: 1.5;
   letter-spacing: 0.02em;
   max-width: 264px;
-  margin: 0;
+  margin-top: 0;
+  margin-left: 0px;
+  margin-bottom: 0;
+  margin-right: 0px;
 }
-
+.social-media-wrapper .list {
+  gap: 16px;
+  max-width: 208px;
+}
+.social-media {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  margin-top: 0px;
+  margin-bottom: 16px;
+}
+.media-icon {
+  fill:#4D5AE5;
+}
+.media-icon:hover {
+  fill:#31D0AA;
+}
 /* portfolio styles */
 
 .filter {
