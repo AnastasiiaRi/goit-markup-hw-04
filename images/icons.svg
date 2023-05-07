@@ -1,6 +1,7 @@
 <svg aria-hidden="true"
 style="position:absolute; width:0;height:0"
-xmlns="http://www.w3.org/2000/svg">
+xmlns="http://www.w3.org/2000/svg"
+overflow="hidden">
 <defs>
 <!--antenna-->
 <symbol id="antenna" viewBox="0 0 264 112">
